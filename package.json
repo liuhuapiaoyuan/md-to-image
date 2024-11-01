@@ -1,0 +1,25 @@
+{
+  "name": "md2image",
+  "description": "一款支持markdown转image的工具",
+  "main": "dist/index.js",
+  "version": "0.0.1",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "docs"
+  ],
+  "scripts": {
+    "build": "bun build ./src/index.ts  --target=node  --outdir=dist && tsc --declaration --emitDeclarationOnly",
+    "patch:version": "npm version patch",
+    "release": "bun run build && npm publish && npm version patch"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+  }
+}
