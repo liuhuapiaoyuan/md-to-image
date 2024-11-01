@@ -1,5 +1,5 @@
 {
-  "name": "md2image",
+  "name": "md-to-image",
   "description": "一款支持markdown转image的工具",
   "main": "dist/index.js",
   "version": "0.0.1",
